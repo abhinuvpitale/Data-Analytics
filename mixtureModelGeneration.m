@@ -5,8 +5,8 @@ clear all;
 I = eye(2);
 % Generate the means for red and blue data centres using (1,0) and (0,1).
 % Gaussian Mixture Model
-mBlue = mvnrnd([1,0]', I/5,50);
-mRed = mvnrnd([0,1]', I,50);
+mBlue = mvnrnd([1,0]', I, 5);
+mRed = mvnrnd([0,1]', I, 5);
 
 figure(1);
 hold on;
