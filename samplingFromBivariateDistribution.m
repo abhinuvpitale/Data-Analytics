@@ -1,9 +1,10 @@
 %script to run mvnrnd
 
+% Tune these to change the distribution
 mu = [1 0];
 sigma = [1 0;0 1];
 
-%increase the size of N to see the distribution's concentration near the
+%increase N to see the distribution's concentration near the
 %mean
 N = 1000;
 
