@@ -1,4 +1,4 @@
-% Loads up the SPAM Dataset from Hewlett Packard Labs.
+% % Loads up the SPAM Dataset from Hewlett Packard Labs.
 % Builds a CART based on the features provided
 % Does a 10-fold cross validation to report the average classification
 % rate.
@@ -39,7 +39,7 @@ for i=1:folds
     [cost,secost,ntnodes,bestlevel] = test(cartTree,'cross',xTrain,yTrain);
     pruneCartTree = prune(cartTree,'level',bestlevel);
     % useful for debugging
-    view(cartTree);
+    % view(cartTree);
     
     yFit = eval(pruneCartTree,xTest);
     error = abs(yFit-yTest);
